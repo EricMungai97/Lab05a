@@ -59,7 +59,7 @@ function sumAndMultiply(a, b, c) { //eslint-disable-line
   let my2Product =  multiply(myProduct, c)[0];
   let myStr = `${a} and ${b} and ${c} sum to ${mySum2}.`;
   let my2Str = `The product of ${a} and ${b} and ${c} is ${my2Product}.`;
-  return [mySum2, my2Product, myStr, my2Str ];
+  return [mySum2, my2Product, myStr, my2Str];
 
 }
 
@@ -85,7 +85,7 @@ function sumArray(sumArr) { //eslint-disable-line
   let mysum = sum(testArray[0], testArray[1])[0];
   let myfinalsum = sum(mysum, testArray[2])[0];
   let myStr = `${testArray[0]},${testArray[1]},${testArray[2]} was passed in as an array of numbers, and ${myfinalsum} is their sum.`;
-  return[myfinalsum, myStr];
+  return [myfinalsum, myStr];
 }
 
 // Here is the test for sumArray(); uncomment it to run it
@@ -106,11 +106,15 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
+  let myProduct = multiply(testArray[0], testArray[1])[0];
+  let myfinalProduct = multiply(myProduct, testArray[2])[0];
+  let myStr = `The numbers ${testArray[0]},${testArray[1]},${testArray[2]} have a product of 24.`;
+  return [myfinalProduct, myStr];
 
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
